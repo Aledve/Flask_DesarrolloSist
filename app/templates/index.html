@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Patitas Felices</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/stylePrincipal.css') }}">
+
+    </head>
+
+<body>
+        <div id="titulo">
+            <h1>VetSoftware</h1>
+        </div>
+
+        <div id="subtitulo">
+            <h2>PATITAS FELICES</h2>
+        </div>
+
+        <div id="logo">
+            <img class="circular--square" src="{{ url_for('static', filename='img/logo2.png') }}" alt="Mi Imagen">
+        </div>
+
+        <div id="inicio">
+            <form action="#">
+                <button class="boton-iniciar-sesion">INICIAR SESIÓN</button><br><br><br>
+                <a class="boton-iniciar-sesion-administrador" href="{{ url_for('static', filename=panel_admin_url) }}">INICIAR SESIÓN COMO ADMINISTRADOR</a><br><br><br>
+                <button class="boton-olvide-contraseña">OLVIDÉ MI CONTRASEÑA</button>
+                <a class="boton-crear-cuenta" href="{{ url_for('static', filename=crear_cuenta_url) }}">CREAR CUENTA<br></a><br><br>
+                <button class="boton-colabora">COLABORA CON NOSOTROS</button><br><br>
+            </form>
+        </div>
+
+        <div id="socialmedia">
+            <img class="instagram" src="{{ url_for('static', filename='img/instagram_logo.png') }}"/>
+            <img class="facebook" src="{{ url_for('static', filename='img/facebook_logo.png') }}"/>
+            <img class="x" src="{{ url_for('static', filename='img/x_logo.png') }}"/>
+        </div>
+
+        <div id="copyright">
+            <p>© Todos Los Derechos Reservados</p>
+        </div>
+
+</body>
+</html>

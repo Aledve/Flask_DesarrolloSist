@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Convert | Export html Table to CSV & EXCEL File</title>
+    <link rel="stylesheet" type="text/css" href="css/stylePanelClientes.css">
+</head>
+
+<body>
+    <div id="titulo">
+        <h1>PANEL CLIENTES</h1>
+    </div>
+
+    <div id="operaciones">
+        <img class="crear" id="crearBtn" src="img/crear_boton.png"/>
+        <img class="editar" src="img/editar_boton.png"/>
+        <img class="eliminar" src="img/eliminar_boton.png"/>
+    </div>
+    
+    <main class="table" id="customers_table">
+        <section class="table__header">
+            <div class="input-group">
+                <input type="search" placeholder="Search Data...">
+                <img src="img/search.png" alt="">
+            </div>
+
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="img/pdf.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="img/json.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="img/csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="img/excel.png" alt=""></label>
+                </div>
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> ID <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> NOMBRE <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> CORREO <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> ID MASCOTA <span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 
+                            01_A
+                        </td>
+                        <td>
+                            Zinzu Chan Lee
+                        </td>
+                        <td>
+                            chanZin@extension.com
+                        </td>
+                        <td>
+                            M01_A
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            02_A
+                        </td>
+                        <td>
+                            Jeet Saru
+                        </td>
+                        <td> 
+                            saruJeet@extension.com
+                        </td>
+                        <td>
+                            M02_A
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            03_A
+                        </td>
+                        <td>
+                            Sonal Gharti
+                        </td>
+                        <td> 
+                            ghartiSonal@extension.com
+                            </div>
+                        </td>
+                        <td>
+                            M03_A
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            04_A
+                        </td>
+                        <td>
+                            Alson GC
+                        </td>
+                        <td> 
+                            gcAlson@extension.com
+                        </td>
+                        <td>
+                            M04_A
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <div class="input-group">
+                                <input type="text" placeholder="05_A">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <input type="text" placeholder="Ingrese el nombre del cliente">
+                            </div>
+                        </td>
+                        <td> 
+                            <div class="input-group">
+                                <input type="text" placeholder="cliente@extension.com">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <input type="text" placeholder="M05_A">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <div class="input-group">
+                                <input type="text" placeholder="06_A">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <input type="text" placeholder="Ingrese el nombre del cliente">
+                            </div>
+                        </td>
+                        <td> 
+                            <div class="input-group">
+                                <input type="text" placeholder="cliente@extension.com">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <input type="text" placeholder="M06_A">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <div class="input-group">
+                                <input type="text" placeholder="07_A">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <input type="text" placeholder="Ingrese el nombre del cliente">
+                            </div>
+                        </td>
+                        <td> 
+                            <div class="input-group">
+                                <input type="text" placeholder="cliente@extension.com">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <input type="text" placeholder="M07_A">
+                            </div>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="/js/scriptPanelClientes.js"></script>
+
+    <div id="advertencia">
+        <h4 id="warning">ADVERTENCIA</h4>
+        <p>Si realiza cambios puede perder información de usuarios ya registrados</p>
+    </div>
+    
+
+</body>
+
+</html>
